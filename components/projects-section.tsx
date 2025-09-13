@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ProjectsSection() {
   return (
@@ -17,8 +18,8 @@ export function ProjectsSection() {
               <div className="aspect-video bg-muted overflow-hidden">
                 <Image
                   src="/globe.svg"
-                  width={50}
-                  height={40}
+                  width={70}
+                  height={80}
                   alt="PICKOVO project"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -36,6 +37,12 @@ export function ProjectsSection() {
                   Get expert auto repair, maintenance, and diagnostics at your
                   doorstep. Book online for efficient.
                 </p>
+                <Link
+                  href="https://www.pickovo.com/"
+                  className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
+                >
+                  View Website
+                </Link>
               </div>
             </div>
 
@@ -62,6 +69,12 @@ export function ProjectsSection() {
                   Get expert auto repair, maintenance, and diagnostics at your
                   doorstep. Book online for efficient.
                 </p>
+                <Link
+                  href="https://www.minetech.co.rw/"
+                  className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
+                >
+                  View Website
+                </Link>
               </div>
             </div>
           </div>

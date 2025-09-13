@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ExperienceSection() {
   return (
@@ -23,12 +24,12 @@ export function ExperienceSection() {
                   </h3>
                   <p className="text-muted-foreground">May 2025 - present</p>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  href="https://www.heptadev.com/"
                   className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
                 >
                   View Website
-                </a>
+                </Link>
               </div>
 
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -66,11 +67,11 @@ export function ExperienceSection() {
               </div>
 
               <div className="flex-1">
-                <div className="w-full h-64 bg-card rounded-lg overflow-hidden border border-border">
+                <div className="w-80 h-64 bg-card rounded-lg overflow-hidden border border-border">
                   <Image
-                    src="/globe.svg"
-                    width={40}
-                    height={40}
+                    src="/dnk-photo-PdXqqLO6jtw-unsplash.jpg"
+                    width={64}
+                    height={80}
                     alt="Church interior"
                     className="w-full h-full object-cover"
                   />

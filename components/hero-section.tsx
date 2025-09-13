@@ -32,21 +32,36 @@ export function HeroSection() {
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-xs text-primary-foreground">⚛</span>
-              </div>
-              <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
-                <span className="text-xs text-secondary-foreground">N</span>
-              </div>
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-xs text-accent-foreground">TS</span>
-              </div>
-              <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center">
-                <span className="text-xs text-muted-foreground">☕</span>
-              </div>
-              <div className="w-8 h-8 bg-primary/50 rounded-full flex items-center justify-center">
-                <span className="text-xs text-primary-foreground">🍃</span>
-              </div>
+              <Image
+                src={"/skill-icons--react-dark.svg"}
+                alt={"react"}
+                width={40}
+                height={40}
+              ></Image>
+              <Image
+                src={"/skill-icons--nextjs-light.svg"}
+                alt={"next js"}
+                width={40}
+                height={40}
+              ></Image>
+              <Image
+                src={"/devicon--typescript.svg"}
+                alt={"typescript"}
+                width={40}
+                height={40}
+              ></Image>
+              <Image
+                src={"/logos--java.svg"}
+                alt={"java"}
+                width={40}
+                height={40}
+              ></Image>
+              <Image
+                src={"/simple-icons--springboot.svg"}
+                alt={"springboot"}
+                width={40}
+                height={40}
+              ></Image>
             </div>
 
             <Button
