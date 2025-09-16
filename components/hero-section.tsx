@@ -15,7 +15,18 @@ export function HeroSection() {
   return (
     <section className="section-padding pt-32">
       <div className="container-max">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          <div className="flex-shrink-0">
+            <div className="w-80 h-96 bg-card rounded-lg overflow-hidden border border-border">
+              <Image
+                src="/globe.svg"
+                width={40}
+                height={40}
+                alt="RUTAGANDA JEAN VALENTIN"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <div className="flex-1 space-y-6">
             {/* <Badge variant="secondary" className="w-fit">
               Software engineer
@@ -71,18 +82,6 @@ export function HeroSection() {
             >
               My Projects
             </Button>
-          </div>
-
-          <div className="flex-shrink-0">
-            <div className="w-80 h-96 bg-card rounded-lg overflow-hidden border border-border">
-              <Image
-                src="/globe.svg"
-                width={40}
-                height={40}
-                alt="RUTAGANDA JEAN VALENTIN"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>

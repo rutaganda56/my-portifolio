@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-// import { Textarea } from "@/components/ui/textarea"
 
 export function ContactSection() {
   return (
@@ -35,28 +34,6 @@ export function ContactSection() {
                 valentinrutaganda04@gmail.com
               </a>
             </div>
-          </div>
-
-          <div className="bg-card rounded-lg p-8 border border-border">
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <Input placeholder="Your Name" className="bg-background" />
-                <Input
-                  placeholder="Your Email"
-                  type="email"
-                  className="bg-background"
-                />
-              </div>
-              <Input placeholder="Subject" className="bg-background" />
-              {/* <Textarea placeholder="Your Message" rows={5} className="bg-background" /> */}
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-              >
-                Send Message
-              </Button>
-            </form>
           </div>
         </div>
       </div>
