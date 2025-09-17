@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-// import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
   const scrollToProjects = () => {
@@ -20,17 +20,17 @@ export function HeroSection() {
             <div className="w-64 h-80 bg-card rounded-lg overflow-hidden border border-border">
               <Image
                 src="/myImage.jpg"
-                width={256} // Match w-64 (64 * 4 = 256px)
-                height={320} // Match h-80 (80 * 4 = 320px)
+                width={256}
+                height={320}
                 alt="RUTAGANDA JEAN VALENTIN"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           <div className="flex-1 space-y-6">
-            {/* <Badge variant="secondary" className="w-fit">
+            <Badge variant="secondary" className="w-fit">
               Software engineer
-            </Badge> */}
+            </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance">
               Hi, I&apos;m RUTAGANDA JEAN VALENTIN.
