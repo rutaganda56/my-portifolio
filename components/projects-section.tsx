@@ -17,7 +17,7 @@ export function ProjectsSection() {
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors group">
               <div className="aspect-video bg-muted overflow-hidden">
                 <Image
-                  src="/pickovo.JPG"
+                  src="/Pickovo.JPG"
                   width={600} // Much larger to match display size
                   height={338} // 16:9 ratio (600 ÷ 16 × 9)
                   alt="PICKOVO project"
