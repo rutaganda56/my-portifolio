@@ -65,9 +65,9 @@ export function ProjectsSection() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Pickovo is Rwanda&apos;s leading mobile car service platform.
-                  Get expert auto repair, maintenance, and diagnostics at your
-                  doorstep. Book online for efficient.
+                  MineTech&apos;s smart dashboard empowers frontline teams with
+                  real-time visibility across the entire mining operation from
+                  field activity to compliance reporting.
                 </p>
                 <Link
                   href="https://www.minetech.co.rw/"

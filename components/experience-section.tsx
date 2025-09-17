@@ -48,37 +48,6 @@ export function ExperienceSection() {
               </div>
             </div>
           </div>
-
-          <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-12">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-4">
-                  Spoiler: I have other hobbies
-                </h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2">FAITH</h4>
-                    <p className="text-muted-foreground">
-                      My life is centered around my faith, and I make it a
-                      priority to attend Mass in my free time.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1">
-                <div className="w-80 h-64 bg-card rounded-lg overflow-hidden border border-border">
-                  <Image
-                    src="/dnk-photo-PdXqqLO6jtw-unsplash.jpg"
-                    width={256}
-                    height={320}
-                    alt="Church interior"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
