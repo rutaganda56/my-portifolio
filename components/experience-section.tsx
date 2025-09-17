@@ -70,8 +70,8 @@ export function ExperienceSection() {
                 <div className="w-80 h-64 bg-card rounded-lg overflow-hidden border border-border">
                   <Image
                     src="/dnk-photo-PdXqqLO6jtw-unsplash.jpg"
-                    width={64}
-                    height={80}
+                    width={256}
+                    height={320}
                     alt="Church interior"
                     className="w-full h-full object-cover"
                   />

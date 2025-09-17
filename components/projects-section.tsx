@@ -17,9 +17,9 @@ export function ProjectsSection() {
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors group">
               <div className="aspect-video bg-muted overflow-hidden">
                 <Image
-                  src="/globe.svg"
-                  width={70}
-                  height={80}
+                  src="/pickovo.JPG"
+                  width={600} // Much larger to match display size
+                  height={338} // 16:9 ratio (600 ÷ 16 × 9)
                   alt="PICKOVO project"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -49,9 +49,9 @@ export function ProjectsSection() {
             <div className="bg-card rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-colors group">
               <div className="aspect-video bg-muted overflow-hidden">
                 <Image
-                  src="/globe.svg"
-                  width={40}
-                  height={40}
+                  src="/minetech.JPG"
+                  width={600}
+                  height={338}
                   alt="MINETECH project"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

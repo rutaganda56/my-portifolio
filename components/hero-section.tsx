@@ -17,11 +17,11 @@ export function HeroSection() {
       <div className="container-max">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-shrink-0">
-            <div className="w-80 h-96 bg-card rounded-lg overflow-hidden border border-border">
+            <div className="w-64 h-80 bg-card rounded-lg overflow-hidden border border-border">
               <Image
-                src="/globe.svg"
-                width={40}
-                height={40}
+                src="/myImage.jpg"
+                width={256} // Match w-64 (64 * 4 = 256px)
+                height={320} // Match h-80 (80 * 4 = 320px)
                 alt="RUTAGANDA JEAN VALENTIN"
                 className="w-full h-full object-cover"
               />
