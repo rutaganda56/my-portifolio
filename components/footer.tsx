@@ -7,7 +7,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="text-l font-bold">
-                © 2025 | Rutaganda Jean Valentin
+                © 2026 | Rutaganda Jean Valentin
               </div>
             </div>
 

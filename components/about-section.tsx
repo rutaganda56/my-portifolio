@@ -8,7 +8,7 @@ export function AboutSection() {
           <div className="flex-shrink-0">
             <div className="w-64 h-80 bg-card rounded-lg overflow-hidden border border-border">
               <Image
-                src="/myImage.jpg"
+                src="/rutagandavalentin.jpeg"
                 width={256} // Match w-64 (64 * 4 = 256px)
                 height={320} // Match h-80 (80 * 4 = 320px)
                 alt="RUTAGANDA JEAN VALENTIN"

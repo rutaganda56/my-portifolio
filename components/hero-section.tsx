@@ -19,7 +19,7 @@ export function HeroSection() {
           <div className="flex-shrink-0">
             <div className="w-64 h-80 bg-card rounded-lg overflow-hidden border border-border">
               <Image
-                src="/myImage.jpg"
+                src="/rutagandavalentin.jpeg"
                 width={256}
                 height={320}
                 alt="RUTAGANDA JEAN VALENTIN"

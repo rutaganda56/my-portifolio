@@ -14,15 +14,48 @@ export function ExperienceSection() {
               Companies where I have worked
             </p>
           </div>
-
+          <div className="container-max">
+        <div className="space-y-12">
           <div className="space-y-8">
+            <div className="border border-border rounded-lg p-8 bg-card hover:bg-card/80 transition-colors">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Trainee, Africa To Silicon Valley
+                  </h3>
+                  <p className="text-muted-foreground">November 2025 - present</p>
+                </div>
+                <Link
+                  href="https://a2sv.org/"
+                  className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
+                >
+                  View Website
+                </Link>
+              </div>
+
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                A2SV is a non-profit tech academy and incubator that 
+                educates top university students to create digital 
+                solutions that address critical challenges across Africa.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
+                  Python
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="space-y-8">
             <div className="border border-border rounded-lg p-8 bg-card hover:bg-card/80 transition-colors">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                 <div>
                   <h3 className="text-xl font-semibold mb-2">
                     Full stack developer, Hepta Dev
                   </h3>
-                  <p className="text-muted-foreground">May 2025 - present</p>
+                  <p className="text-muted-foreground">May 2025 - October 2025</p>
                 </div>
                 <Link
                   href="https://www.heptadev.com/"
