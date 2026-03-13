@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -31,7 +32,13 @@ export function Navigation() {
     >
       <div className="container-max">
         <div className="flex items-center justify-between py-4">
-          <div className="text-xl font-bold text-foreground">Ruta00</div>
+          <div className="text-xl font-bold text-foreground"><Image 
+                          src="/updatedroundedlogo.png"
+                          width={50} // Match w-64 (64 * 4 = 256px)
+                          height={50} // Match h-80 (80 * 4 = 320px)
+                          alt="RUTAGANDA JEAN VALENTIN"
+                          className="w-full h-full object-cover"
+                        /></div>
 
           <div className="hidden md:flex items-center gap-8">
             <button
