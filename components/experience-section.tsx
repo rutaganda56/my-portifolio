@@ -1,86 +1,65 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 
+import { usePortfolio } from "@/components/portfolio-provider";
+
+const companyLinks = [
+  "https://a2sv.org/",
+  "https://www.heptadev.com/",
+];
+
 export function ExperienceSection() {
+  const { t } = usePortfolio();
+
   return (
     <section id="experience" className="section-padding">
-      <div className="container-max">
-        <div className="space-y-12">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              My Experience
-            </h2>
-            <p className="text-muted-foreground">
-              Companies where I have worked
-            </p>
-          </div>
-          <div className="container-max">
-        <div className="space-y-12">
-          <div className="space-y-8">
-            <div className="border border-border rounded-lg p-8 bg-card hover:bg-card/80 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Trainee, Africa To Silicon Valley
-                  </h3>
-                  <p className="text-muted-foreground">November 2025 - present</p>
-                </div>
-                <Link
-                  href="https://a2sv.org/"
-                  className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
-                >
-                  View Website
-                </Link>
-              </div>
-
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                A2SV is a non-profit tech academy and incubator that 
-                educates top university students to create digital 
-                solutions that address critical challenges across Africa.
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
-                  Python
-                </span>
-              </div>
-            </div>
-          </div>
+      <div className="container-max space-y-10">
+        <div>
+          <p className="section-eyebrow">{t.experience.title}</p>
+          <h2 className="section-title">{t.experience.title}</h2>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            {t.experience.intro}
+          </p>
         </div>
-      </div>
-      <div className="space-y-8">
-            <div className="border border-border rounded-lg p-8 bg-card hover:bg-card/80 transition-colors">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+
+        <div className="space-y-6">
+          {t.experience.items.map((item, index) => (
+            <article
+              key={`${item.role}-${item.period}`}
+              className="rounded-3xl border border-border/70 bg-card/80 p-8"
+            >
+              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">
-                    Full stack developer, Hepta Dev
-                  </h3>
-                  <p className="text-muted-foreground">May 2025 - October 2025</p>
+                  <h3 className="text-xl font-semibold">{item.role}</h3>
+                  <p className="mt-1 text-sm text-primary">{item.period}</p>
                 </div>
                 <Link
-                  href="https://www.heptadev.com/"
-                  className="text-primary hover:text-primary/80 transition-colors text-sm underline w-fit"
+                  href={companyLinks[index]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary underline-offset-4 hover:underline"
                 >
-                  View Website
+                  {t.experience.website}
                 </Link>
               </div>
 
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Harness the power of AI, backed by 50+ skilled developers and
-                designers, to redefine your digital workflow with fast,
-                flexible, and cost-efficient solutions.
+              <p className="mt-5 max-w-3xl leading-relaxed text-muted-foreground">
+                {item.description}
               </p>
 
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
-                  Next.js
-                </span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
-                  TypeScript
-                </span>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {item.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-border/70 bg-background px-4 py-2 text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
-            </div>
-          </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

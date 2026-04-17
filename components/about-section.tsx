@@ -1,37 +1,34 @@
+"use client";
+
 import Image from "next/image";
 
+import { usePortfolio } from "@/components/portfolio-provider";
+
 export function AboutSection() {
+  const { t } = usePortfolio();
+
   return (
     <section id="about" className="section-padding">
-      <div className="container-max">
-        <div className="flex flex-col lg:flex-row items-start gap-12">
-          <div className="flex-shrink-0">
-            <div className="w-64 h-80 bg-card rounded-lg overflow-hidden border border-border">
-              <Image 
-                src="/rutagandavalentin.jpeg"
-                width={256} // Match w-64 (64 * 4 = 256px)
-                height={320} // Match h-80 (80 * 4 = 320px)
-                alt="RUTAGANDA JEAN VALENTIN"
-                className="w-full h-full object-cover"
-              />
-            </div>
+      <div className="container-max grid items-start gap-10 lg:grid-cols-[280px_1fr]">
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden rounded-[2rem] border border-border/70 bg-card">
+          <Image
+            src="/WhatsApp Image 2026-04-17 at 11.43.24 (1).jpeg"
+            alt="Rutaganda Jean Valentin"
+            fill
+            sizes="(max-width: 1024px) 280px, 320px"
+            className="object-cover"
+          />
+        </div>
+
+        <div className="space-y-6">
+          <div>
+            <p className="section-eyebrow">{t.about.eyebrow}</p>
+            <h2 className="section-title">{t.about.title}</h2>
           </div>
 
-          <div className="flex-1 space-y-6">
-            <div>
-              <p className="text-muted-foreground mb-2">
-                Get to know me better
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
-            </div>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I&apos;m RUTAGANDA JEAN VALENTIN, a developer with three years of
-              experience building web solutions. I specialize in turning ideas
-              into tangible products with a focus on React, Next.js, TypeScript,
-              Java, and Spring Boot.
-            </p>
-          </div>
+          <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            {t.about.body}
+          </p>
         </div>
       </div>
     </section>
