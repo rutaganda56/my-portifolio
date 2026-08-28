@@ -19,7 +19,7 @@ export const sectionIds = [
 export const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/your-github-username",
+    href: "https://github.com/rutaganda56",
     placeholder: true,
   },
   {
@@ -201,7 +201,7 @@ export const translations: Record<Language, TranslationShape> = {
             "Rwanda's mobile car service platform for booking diagnostics, maintenance, and auto repair at the customer's doorstep.",
           technologies: ["Next.js", "Responsive UI", "Booking Flow"],
           liveUrl: "https://www.pickovo.com/",
-          githubUrl: "https://github.com/your-github-username/pickovo-case-study",
+          githubUrl: "https://github.com/rutaganda56",
           image: "/Pickovo.JPG",
           placeholder: true,
         },
@@ -211,7 +211,7 @@ export const translations: Record<Language, TranslationShape> = {
             "A smart dashboard experience that gives mining teams better visibility into field operations, reporting, and compliance activity.",
           technologies: ["Next.js", "Dashboard Design", "Data Visibility"],
           liveUrl: "https://www.minetech.co.rw/",
-          githubUrl: "https://github.com/your-github-username/minetech-case-study",
+          githubUrl: "https://github.com/rutaganda56",
           image: "/minetech.JPG",
           placeholder: true,
         },
@@ -227,8 +227,8 @@ export const translations: Record<Language, TranslationShape> = {
             { name: "TypeScript", level: "Proficient" },
             { name: "JavaScript", level: "Proficient" },
             { name: "Java", level: "Proficient" },
-            { name: "Python", level: "Working knowledge" },
-            {name:"C#",level: "Working knowledge"}
+            { name: "Python", level: "Advanced" },
+            {name:"C#",level: "Advanced"}
           ],
         },
         {
@@ -236,8 +236,8 @@ export const translations: Record<Language, TranslationShape> = {
           items: [
             { name: "Next.js", level: "Proficient" },
             { name: "React", level: "Proficient" },
-            { name: "Spring Boot", level: "Working knowledge" },
-            {name:"ASP.net" , level:"Working knowledge"}
+            { name: "Spring Boot", level: "Proficient" },
+            {name:"ASP.net" , level:"Proficient"}
           ],
         },
         {
